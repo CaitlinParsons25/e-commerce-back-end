@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
       }
     ]
   }).then(categories => res.json(categories)).catch(err => {
-    res.status(404).json({message: 'No such category found'})
+    res.status(404).json({message: 'No categories found'})
   })
 });
 
